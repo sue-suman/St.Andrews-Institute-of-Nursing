@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" sizes="192x192" href="./assets/Sain logo.png" >
+    <script src="https://kit.fontawesome.com/023c1a62ea.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/link.css">
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="header-left">
+                <ul>
+                    <li><a href="mailto:info2sain.org">info2sain.org</a></li>
+                    <li><a href="tel:1111111111">1111111111</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="logo" >
+            <h1>ST. ANDREWS INSTITUTE OF NURSING</h1>
+        </div>
+        <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./courses.html">Courses</a>
+            <a href="./apply.html">Admissions</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="top">Registration</div>
+        <form id="form">
+            <div class="form">
+                <div class="details">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+
+                        <div class="input-fields">
+                            <label>Name</label>
+                            <input type="text" id="full_name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Date of Birth</label>
+                            <input type="date" id="d_o_b" placeholder="Enter birth date" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Email</label>
+                            <input type="email" id="email_id" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Mobile Number</label>
+                            <input type="number" id="mob_number" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Gender</label>
+                            <input type="text" id="gender" placeholder="Enter your gender" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Course Interested In</label>
+                            <select name="text" id="course" required>
+                                <option value="bsc_hons">B.Sc.(Hons)</option>
+                                <option value="bsc_post_basic">B.Sc(Post Basic)</option>
+                                <option value="msc">M.Sc.</option>
+                            </select>
+                        </div>
+                
+                        <div class="input-fields">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality" placeholder="Enter your nationality" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>State</label>
+                            <input type="text" id="state" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>District</label>
+                            <input type="text" id="district" placeholder="Enter your district" required>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" required><span>I authorize SAIN to contact me with updates and notifications via Email, SMS & Whatsapp.</span>
+                        </div>
+                        <button type="submit" value="submit">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        var form=document.getElementById('form')
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            var full_name=document.getElementById("full_name").value
+            console.log(full_name)
+            var d_o_b=document.getElementById("d_o_b").value
+            console.log(d_o_b)
+            var email_id=document.getElementById("email_id").value
+            console.log(email_id)
+            var mob_number=document.getElementById("mob_number").value
+            console.log(mob_number)
+            var gender=document.getElementById("gender").value
+            console.log(gender)
+            var occupation=document.getElementById("course").value
+            console.log(course)
+            var nationality=document.getElementById("nationality").value
+            console.log(nationality)
+            var state=document.getElementById("state").value
+            console.log(state)
+            var district=document.getElementById("district").value
+            console.log(district)
+            
+
+        })
+    </script>
+</body>
+</html>
